@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Buttons That Add</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<h1>Select Boxes that Add!</h1>
+<div id="total">$0.00</div>
+<div class="container">
+  <section class="one"><span class="description">Product A</span><span class="price">$49.99</span>
+    <div data-toggle="buttons" class="btn-group">
+      <label class="btn btn-primary active"><span class="glyphicon glyphicon-unchecked"></span>
+        <input id="checkOne" type="checkbox" name="products" checked="checked" class="sr-only"/>
+        <label for="checkOne">Not Selected</label>
+      </label>
+    </div>
+  </section>
+  <section class="two"><span class="description">Product B</span><span class="price">$19.99</span>
+    <div data-toggle="buttons" class="btn-group">
+      <label class="btn-primary"><span class="glyphicon glyphicon-unchecked"></span>
+        <input id="checkTwo" type="checkbox" name="products" class="sr-only"/>
+        <label for="checkTwo">Not Selected</label>
+      </label>
+    </div>
+  </section>
+  <section class="three"><span class="description">Product C</span><span class="price">$29.99</span>
+    <div data-toggle="buttons" class="btn-group">
+      <label class="btn-primary"><span class="glyphicon glyphicon-unchecked"></span>
+        <input id="checkThree" type="checkbox" name="products" class="sr-only"/>
+        <label for="checkThree">Not Selected</label>
+      </label>
+    </div>
+  </section>
+</div>
+
+<section class="checkout">
+	<label class="btn-primary">
+	  <label for="checkout"> Checkout </label>
+	</label>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

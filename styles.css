@@ -1,0 +1,72 @@
+body {
+  margin: 0 auto;
+}
+body h1 {
+  text-align: center;
+  padding: 20px;
+}
+body #total {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container h1 {
+  display: block;
+}
+.container section {
+  flex: center;
+  width: 300px;
+  height: 230px;
+  opacity: 0.8;
+  background-color: gray;
+  text-align: center;
+  padding-top: 20px;
+}
+.container .description, .container .price {
+  display: block;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 20px;
+}
+.container input[type="checkbox"] {
+  padding: 20px;
+}
+.container .btn-primary, .container .btn-success {
+  width: 200px;
+  border: 1px solid black;
+  padding: 30px;
+}
+.container .btn-primary:hover, .container .btn-success:hover {
+  cursor: pointer;
+}
+.checkout{
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout .btn-primary{
+  padding: 25px;
+  text-transform: uppercase;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.checkout .btn-primary label {
+  margin-left: 33%;
+}
+@media (max-width: 767px) {
+  .container{
+    flex-direction: column;
+  }
+  section{
+    margin: 40px auto;
+  }
+}
